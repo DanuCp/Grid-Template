@@ -1,0 +1,143 @@
+@use "../../presets" as *;
+@use "../../mixins" as *;
+.posts {
+  margin-top: 95px;
+  margin-bottom: 100px;
+  &_container {
+    max-width: 1340px;
+    margin: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  &-content {
+    display: grid;
+    align-content: center;
+
+    padding: $gap;
+
+    transition: 0.5s;
+    &__text {
+      margin: 30px 0 0;
+
+      text-align: center;
+      letter-spacing: 0.05em;
+      letter-spacing: 0.01em;
+
+      color: #637588;
+
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 20px;
+    }
+    &__suptext {
+      margin-top: 10px;
+
+      text-align: center;
+      letter-spacing: 0.05em;
+
+      color: $color-gray;
+
+      font-family: $font-header;
+      font-size: 1.125rem;
+      font-weight: 700;
+      line-height: 20px;
+    }
+  }
+  &-grid {
+    display: grid;
+
+    gap: $gap;
+    grid-template-areas: "p1 p1 p2 p3" "p4 p5 p6 p6";
+    grid-template-columns: repeat(4, 1fr);
+    @include lg-md {
+        grid-template-areas: "p1 p1 p2" "p3 p4 p4" "p5 p5 p6";
+    grid-template-columns: repeat(3, 1fr);
+    }
+    @include md-sm {
+        grid-template-areas: "p1 p2" "p3 p4" "p5 p6" ;
+      grid-template-columns: 1fr 1fr;
+    }
+    @include sm {
+        grid-template-areas: "p1" "p2" "p3" "p4" "p5" "p6";
+    grid-template-columns: 1fr;
+    }
+  }
+  &-action {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  &-title {
+    margin-top: 0 ;
+    margin-bottom: 55px;
+
+    letter-spacing: 0.1151em;
+
+    color: $color-primary;
+
+    font-family: $font-main;
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+  &-item {
+    display: grid;
+    overflow: hidden;
+
+    transition: transform 0.5s;
+    &:nth-of-type(1) {
+      grid-area: p1;
+    }
+    &:nth-of-type(2) {
+      grid-area: p2;
+    }
+
+    &:nth-of-type(3) {
+      grid-area: p3;
+    }
+
+    &:nth-of-type(4) {
+      grid-area: p4;
+    }
+
+    &:nth-of-type(5) {
+      grid-area: p5;
+    }
+
+    &:nth-of-type(6) {
+      grid-area: p6;
+    }
+    &__link {
+      display: grid;
+      overflow: hidden;
+
+      height: 100%;
+
+      transition: background-color 0.5s;
+
+      grid-template-rows: 300px 1fr;
+      &:hover {
+        transition: background-color 0.5s;
+
+        background-color: #d8d8d8;
+        & .posts-item__img img {
+          transition: transform 0.5s;
+          transform: scale(1.1);
+        }
+      }
+    }
+    &__img {
+      display: flex;
+      overflow: hidden;
+      align-items: center;
+      justify-content: center;
+      & img {
+        width: 100%;
+        height: 100%;
+
+        transition: transform 0.5s;
+
+        object-fit: cover;
+      }
+    }
+  }
+}

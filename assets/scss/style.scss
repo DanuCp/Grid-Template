@@ -1,0 +1,43 @@
+@use "../../libs/normalize.css/normalize";
+@use "mixins/mixins";
+@use "mixins/mixins-media" as *;
+@use "mixins/extends";
+
+@use "presets" as *;
+
+@use "common/typography";
+@use "common/classes";
+
+@use "components/header/header";
+@use "components/header/header-overlay";
+@use "components/header/header-menu";
+@use "components/header/header-logo";
+@use "components/header/header-navbar";
+@use "components/header/header-content";
+@use "components/sections/skills/skills";
+@use "components/sections/skills/skill-item";
+@use "components/sections/section-about";
+@use "components/sections/section-form";
+@use "components/sections/section-posts";
+
+@use "components/footer/footer";
+
+// @import "presets/skin";
+// @import "presets/variables";
+// @import "components/header/header-content";
+// @import "components/header/header-logo";
+// @import "components/header/header-menu";
+// @import "components/header/header";
+// @import "components/header/header-overlay";
+// @import "components/header/_header-navbar";
+// @import "components/sections/skills/skill-item";
+// @import "components/sections/section-about";
+// @import "components/sections/section-form";
+// @import "components/footer/footer";
+// @import "components/sections/section-posts";
+// @import "common/classes";
+// @import "common/typography";
+
+
+
+
