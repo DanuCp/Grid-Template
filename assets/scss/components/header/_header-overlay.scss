@@ -1,9 +1,10 @@
-@use "../../presets" as *;
-.header-overlay {
-  position: absolute;
+@use '../../presets' as *;
+.header-overlay
+{
+    position: absolute;
 
-  opacity: 0.8;
-  background: $color-primary;
+    opacity: .8;
+    background: $color-primary;
 
-  inset: 0;
+    inset: 0;
 }

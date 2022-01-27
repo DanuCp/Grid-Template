@@ -9,25 +9,27 @@
 
     max-width: 1340px;
     margin: auto;
-    padding-right: 20px ;
+    padding-right: 20px;
     padding-left: 20px;
 
     gap: 20px;
     grid-template-columns: repeat(3, 1fr);
     @include md-sm {
-        grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(2, 1fr);
     }
-    @include sm{
-        grid-template-columns: 1fr;
+    @include sm {
+      grid-template-columns: 1fr;
     }
   }
   &-item {
-      @include md-sm {
-          &:nth-of-type(1) {
-            grid-column: 1/ span 2 ;
-          }
+    @include md-sm {
+      &:nth-of-type(1) {
+        grid-column: 1 / span 2;
       }
+    }
     &__input {
+      font-size: 1.125rem;
+
       display: block;
 
       width: 100%;
@@ -38,11 +40,9 @@
       letter-spacing: 0.125em;
 
       color: rgba(255, 255, 255, 0.5);
-      border-color: rgba(255,255,255, 0.01);
+      border-color: rgba(255, 255, 255, 0.01);
       border-bottom-color: $color-light;
       background: rgba(255, 255, 255, 0.05);
-
-      font-size: 1.125rem;
     }
   }
   & .btn--darkness {
@@ -51,9 +51,9 @@
     transition: 0.5s;
 
     color: $color-light;
-    border-color: rgba(255,255,255, 0.01);
+    border-color: rgba(255, 255, 255, 0.01);
     border-bottom-color: $color-light;
-    background: rgba(255,255,255, 0.1);
+    background: rgba(255, 255, 255, 0.1);
   }
   & .btn:hover {
     transition: 0.5s;

@@ -1,12 +1,12 @@
 @use "../../presets" as *;
 .header-logo {
-  letter-spacing: 0.22em;
-
   font-size: 1.5rem;
+
+  letter-spacing: 0.22em;
   &__link {
     display: block;
 
-    padding: 20px;
+    padding: 20px 20px 20px 0;
   }
   &__accent {
     display: inline-block;
@@ -17,4 +17,3 @@
     border: 3px solid $color-highlight;
   }
 }
-

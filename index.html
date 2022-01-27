@@ -2,305 +2,295 @@
 <html lang="zxx">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/png">
-    <!-- Подключаем normalize.css -->
-    <link rel="stylesheet" href="libs/normalize.css/normalize.css">
-    <!-- Подключаем шрифты Roboto и Roboto Slab c сервиса google -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;300;400;700&family=Roboto:wght@100;300;400;500;700;900&display=swap"
-        rel="stylesheet">
-    <!-- Подключаем иконочный шрифт fontawesome -->
-    <link rel="stylesheet" href="libs/@fortawesome/fontawesome-free/css/all.min.css">
-    <!-- Подключаем наш основной стиль, с которым будем работать -->
-    <link rel="stylesheet" href="assets/css/style.css">
-    <title>GRID-TEMPLATE</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="assets/img/favicon.png" type="image/png">
+  <!-- Подключаем normalize.css -->
+  <link rel="stylesheet" href="libs/normalize.css/normalize.css">
+  <!-- Подключаем шрифты Roboto и Roboto Slab c сервиса google -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;300;400;700&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+    rel="stylesheet">
+  <!-- Подключаем иконочный шрифт fontawesome -->
+  <link rel="stylesheet" href="libs/@fortawesome/fontawesome-free/css/all.min.css">
+  <!-- Подключаем наш основной стиль, с которым будем работать -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>GRID-TEMPLATE</title>
 </head>
 
 <body>
 
-    <!-- Код пишем здесь -->
-    <header class="header">
-        <div class="header-content">
-            <div class="header-content__container">
-                <h1 class="header-content__title">WE ARE REAL WEB-DEVELOPERS</h1>
-                <div class="header-content__actions">
-                    <a class="btn btn--light" href="#">Learn more</a>
-                    <a class="btn btn--light" href="#">Get started</a>
-                </div>
-            </div>
+  <!-- Код пишем здесь -->
+  <header class="header">
+    <div class="header-content">
+      <div class="header-content__container">
+        <h1 class="header-content__title">WE ARE REAL WEB-DEVELOPERS</h1>
+        <div class="header-content__actions">
+          <a class="btn btn--light" href="#">Learn more</a>
+          <a class="btn btn--light" href="#">Get started</a>
         </div>
-        <div class="header-menu">
-            <div class="header-menu__container">
-                <div class="header-logo">
-                    <a class="header-logo__link" href="#"><span class="header-logo__accent">SITE</span>LOGO</a>
+      </div>
+    </div>
+    <div class="header-menu">
+      <div class="header-menu__container">
+        <div class="header-logo">
+          <a class="header-logo__link" href="#"><span class="header-logo__accent">SITE</span>LOGO</a>
+        </div>
+        <nav class="header-navbar">
+          <div class="header-navbar__btn">
+            <span class="header-navbar__btn-row"></span>
+            <span class="header-navbar__btn-row"></span>
+            <span class="header-navbar__btn-row"></span>
+            <span class="header-navbar__btn-row"></span>
+            <span class="header-navbar__btn-row"></span>
+            <span class="header-navbar__btn-row"></span>
+          </div>
+          <ul class="header-navbar__list">
+            <li class="header-navbar__item">
+              <a class="header-navbar__link" href="#">Home</a>
+            </li>
+            <li class="header-navbar__item">
+              <a class="header-navbar__link" href="#">About</a>
+            </li>
+            <li class="header-navbar__item">
+              <a class="header-navbar__link" href="#">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="header-overlay"></div>
+  </header>
+  <main>
+    <section class="skills">
+      <div class="skills__container">
+        <article class="skills-item">
+          <h3 class="skills-item__title"><a href="" class="skills-item__link">HTML</a></h3>
+          <div class="skills-item__image" style="background-image: url(assets/img/img-html.png);"></div>
+          <div class="skills-item__overlay"></div>
+        </article>
+        <article class="skills-item">
+          <h3 class="skills-item__title"><a href="" class="skills-item__link">CSS</a></h3>
+          <div class="skills-item__image" style="background-image: url(assets/img/img-css.png);"></div>
+          <div class="skills-item__overlay"></div>
+        </article>
+        <article class="skills-item">
+          <h3 class="skills-item__title"><a href="" class="skills-item__link">Markup</a></h3>
+          <div class="skills-item__image" style="background-image: url(assets/img/img-markup.png);"></div>
+          <div class="skills-item__overlay"></div>
+        </article>
+        <article class="skills-item">
+          <h3 class="skills-item__title"><a href="" class="skills-item__link">Web-Design</a></h3>
+          <div class="skills-item__image" style="background-image: url(assets/img/img-webdesign.png);"></div>
+          <div class="skills-item__overlay"></div>
+        </article>
+        <article class="skills-item">
+          <h3 class="skills-item__title"><a href="" class="skills-item__link">Quality Assurance</a></h3>
+          <div class="skills-item__image" style="background-image: url(assets/img/img-qa.png);"></div>
+          <div class="skills-item__overlay"></div>
+        </article>
+        <article class="skills-item">
+          <h3 class="skills-item__title"><a href="" class="skills-item__link">Codding</a></h3>
+          <div class="skills-item__image" style="background-image: url(assets/img/img-codding.png);"></div>
+          <div class="skills-item__overlay"></div>
+        </article>
+        <article class="skills-item">
+          <h3 class="skills-item__title"><a href="" class="skills-item__link">Adaptability</a></h3>
+          <div class="skills-item__image" style="background-image: url(assets/img/img-adaptability.png);">
+          </div>
+          <div class="skills-item__overlay"></div>
+        </article>
+        <article class="skills-item">
+          <h3 class="skills-item__title"><a href="" class="skills-item__link">PHP</a></h3>
+          <div class="skills-item__image" style="background-image: url(assets/img/img-php.png);"></div>
+          <div class="skills-item__overlay"></div>
+        </article>
+        <article class="skills-item">
+          <h3 class="skills-item__title"><a href="" class="skills-item__link">SEO</a></h3>
+          <div class="skills-item__image" style="background-image: url(assets/img/img-seo.png);"></div>
+          <div class="skills-item__overlay"></div>
+        </article>
+      </div>
+      <div class="skills__action">
+        <a href="" class="btn btn--darkness">View all skills...</a>
+      </div>
+    </section>
+    <section class="about">
+      <div class="about__container">
+        <div class="about-content">
+          <h2 class="about-content__title">
+            Are You Ready?<br> Let's start!
+          </h2>
+          <div class="about-content__text">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates commodi eligendi perspiciatis
+              non ipsam numquam, perferendis fugiat amet molestias provident unde, deleniti quo ducimus placeat
+              voluptas!
+            </p>
+            <p>Quisquam voluptatum quae veritatis quas odio dolores quis voluptas asperiores ex obcaecati reiciendis
+              quidem ducimus et doloribus sed tempore, unde beatae aut consectetur eligendi ratione repellendus nulla
+              pariatur. Explicabo enim
+              officia iure blanditiis eos, velit.
+            </p>
+            <p>
+              Culpa consequatur labore, adipisci asperiores impedit tenetur quam ab dicta recusandae quas nobis
+              reprehenderit necessitatibus placeat corporis enim aliquid sequi saepe. Quos amet, aliquam, reiciendis
+              porro eos voluptates maiores. Voluptas dolor quidem
+              tempora illum laboriosam dolorum neque tenetur.
+            </p>
+            <p>
+              Alias voluptates commodi eligendi perspiciatis non ipsam numquam, perferendis fugiat amet molestias
+              provident unde, deleniti quo ducimus placeat voluptas! Quos amet, aliquam, reiciendis porro eos voluptates
+              maiores.
+            </p>
+          </div>
+        </div>
+        <div class="about-img">
+          <img src="assets/img/img-lamp-webdev.png" alt="lamp">
+        </div>
+      </div>
+    </section>
+    <section class="form">
+      <form class="form__container">
+        <div class="form-item">
+          <input class="form-item__input" type="text" name="name" placeholder="Your name...">
+        </div>
+        <div class="form-item">
+          <input class="form-item__input" type="email" name="mail" placeholder="Your email...">
+        </div>
+        <div class="form-item">
+          <button class="btn btn--darkness" type="submit">Subscribe</button>
+        </div>
+      </form>
+    </section>
+    <section class="posts">
+      <div class="posts_container">
+        <h3 class="posts-title">Some section of posts</h3>
+        <div class="posts-grid">
+          <div class="posts-item">
+            <a class="posts-item__link" href="">
+              <div class="posts-item__img">
+                <img src="assets/img/img-post-1.png" alt="">
+              </div>
+              <div class="posts-content">
+                <div class="posts-content__suptext">Nostrum quod fugiat odio perspiciatis</div>
+                <div class="posts-content__text">Minus ad voluptas non, ducimus suscipit temporibus explicabo! Inventore
+                  dolorum, debitis eligendi earum in corrupti consectetur quam nesciunt facilis explicabo?
                 </div>
-                <nav class="header-navbar">
-                    <div class="header-navbar__btn">
-                        <span class="header-navbar__btn-row"></span>
-                        <span class="header-navbar__btn-row"></span>
-                        <span class="header-navbar__btn-row"></span>
-                        <span class="header-navbar__btn-row"></span>
-                        <span class="header-navbar__btn-row"></span>
-                        <span class="header-navbar__btn-row"></span>
-                    </div>
+              </div>
+            </a>
+          </div>
+          <div class="posts-item">
+            <a class="posts-item__link" href="">
+              <div class="posts-item__img">
+                <img src="assets/img/img-post-2.png" alt="">
+              </div>
+              <div class="posts-content">
+                <div class="posts-content__suptext">Lorem ipsum dolor amet</div>
+                <div class="posts-content__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil aperiam
+                  ipsum obcaecati, quisquam. Reprehenderit corporis neque architecto, id, vero voluptate.
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="posts-item">
+            <a class="posts-item__link" href="">
+              <div class="posts-item__img">
+                <img src="assets/img/img-post-3.png" alt="">
+              </div>
 
-                    <ul class="header-navbar__list">
-                        <li class="header-navbar__item">
-                            <a class="header-navbar__link" href="#">Home</a>
-                        </li>
-                        <li class="header-navbar__item">
-                            <a class="header-navbar__link" href="#">About</a>
-                        </li>
-                        <li class="header-navbar__item">
-                            <a class="header-navbar__link" href="#">Contacts</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
+              <div class="posts-content">
+                <div class="posts-content__suptext">Eum quibusdam voluptas explicabo, commodi</div>
+                <div class="posts-content__text">Quo sit explicabo dolore, nihil soluta adipisci deleniti consequatur
+                  voluptate cumque, quaerat minima repudiandae consectetur incidunt dolorum, culpa, voluptates ab!
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="posts-item">
+            <a class="posts-item__link" href="">
+              <div class="posts-item__img">
+                <img src="assets/img/img-post-4.png" alt="">
+              </div>
+              <div class="posts-content">
+                <div class="posts-content__suptext">Voluptate fuga earum</div>
+                <div class="posts-content__text">Ullam saepe maiores magni, consequatur perferendis earum veniam
+                  officiis sapiente a veritatis corporis voluptatum repellendus, autem dolore molestiae suscipit quia!
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="posts-item">
+            <a class="posts-item__link" href="">
+              <div class="posts-item__img">
+                <img src="assets/img/img-post-5.png" alt="">
+              </div>
+              <div class="posts-content">
+                <div class="posts-content__suptext">Facere rerum aliquam nostrum vel</div>
+                <div class="posts-content__text">Quo sit explicabo dolore, nihil soluta adipisci deleniti consequatur
+                  voluptate cumque, quaerat minima repudiandae consectetur incidunt dolorum, culpa, voluptates ab!</div>
+              </div>
+            </a>
+          </div>
+          <div class="posts-item">
+            <a class="posts-item__link" href="">
+              <div class="posts-item__img">
+                <img src="assets/img/img-post-6.png" alt="">
+              </div>
+              <div class="posts-content">
+                <div class="posts-content__suptext">Ratione reprehenderit necessitatibus, labore vel
+                </div>
+                <div class="posts-content__text">Ad est voluptate sunt, cupiditate, voluptatem dignissimos corporis unde
+                  cumque distinctio, ab odio dolores molestias non cum fugiat enim voluptatibus!
+                </div>
+              </div>
+            </a>
+          </div>
         </div>
-        <div class="header-overlay"></div>
-    </header>
-    <main>
-        <section class="skills">
-            <div class="skills__container">
-                <article class="skills-item">
-                    <h3 class="skills-item__title"><a href="" class="skills-item__link">HTML</a></h3>
-                    <div class="skills-item__image" style="background-image: url(assets/img/img-html.png);"></div>
-                    <div class="skills-item__overlay"></div>
-                </article>
-                <article class="skills-item">
-                    <h3 class="skills-item__title"><a href="" class="skills-item__link">CSS</a></h3>
-                    <div class="skills-item__image" style="background-image: url(assets/img/img-css.png);"></div>
-                    <div class="skills-item__overlay"></div>
-                </article>
-                <article class="skills-item">
-                    <h3 class="skills-item__title"><a href="" class="skills-item__link">Markup</a></h3>
-                    <div class="skills-item__image" style="background-image: url(assets/img/img-markup.png);"></div>
-                    <div class="skills-item__overlay"></div>
-                </article>
-                <article class="skills-item">
-                    <h3 class="skills-item__title"><a href="" class="skills-item__link">Web-Design</a></h3>
-                    <div class="skills-item__image" style="background-image: url(assets/img/img-webdesign.png);"></div>
-                    <div class="skills-item__overlay"></div>
-                </article>
-                <article class="skills-item">
-                    <h3 class="skills-item__title"><a href="" class="skills-item__link">Quality Assurance</a></h3>
-                    <div class="skills-item__image" style="background-image: url(assets/img/img-qa.png);"></div>
-                    <div class="skills-item__overlay"></div>
-                </article>
-                <article class="skills-item">
-                    <h3 class="skills-item__title"><a href="" class="skills-item__link">Codding</a></h3>
-                    <div class="skills-item__image" style="background-image: url(assets/img/img-codding.png);"></div>
-                    <div class="skills-item__overlay"></div>
-                </article>
-                <article class="skills-item">
-                    <h3 class="skills-item__title"><a href="" class="skills-item__link">Adaptability</a></h3>
-                    <div class="skills-item__image" style="background-image: url(assets/img/img-adaptability.png);">
-                    </div>
-                    <div class="skills-item__overlay"></div>
-                </article>
-                <article class="skills-item">
-                    <h3 class="skills-item__title"><a href="" class="skills-item__link">PHP</a></h3>
-                    <div class="skills-item__image" style="background-image: url(assets/img/img-php.png);"></div>
-                    <div class="skills-item__overlay"></div>
-                </article>
-                <article class="skills-item">
-                    <h3 class="skills-item__title"><a href="" class="skills-item__link">SEO</a></h3>
-                    <div class="skills-item__image" style="background-image: url(assets/img/img-seo.png);"></div>
-                    <div class="skills-item__overlay"></div>
-                </article>
-            </div>
-            <div class="skills__action">
-                <a href="" class="btn btn--darkness">View all skills...</a>
-            </div>
-        </section>
-        <section class="about">
-            <div class="about__container">
-                <div class="about-content">
-                    <div class="about-content__title">
-                        <div>Are You Ready?</div>
-                        <div>Let's start!</div>
-                    </div>
-                    <div class="about-content__text">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates commodi eligendi
-                            perspiciatis non ipsam numquam, perferendis fugiat amet molestias provident unde, deleniti
-                            quo ducimus placeat voluptas!
-                        </p>
-                        <p>Quisquam voluptatum quae veritatis quas odio dolores quis voluptas asperiores ex obcaecati
-                            reiciendis quidem ducimus et doloribus sed tempore, unde beatae aut consectetur eligendi
-                            ratione repellendus nulla pariatur. Explicabo enim officia iure blanditiis eos, velit.
-                        </p>
-                        <p>
-                            Culpa consequatur labore, adipisci asperiores impedit tenetur quam ab dicta recusandae quas
-                            nobis reprehenderit necessitatibus placeat corporis enim aliquid sequi saepe. Quos amet,
-                            aliquam, reiciendis porro eos voluptates maiores. Voluptas dolor quidem tempora illum
-                            laboriosam dolorum neque tenetur.
-                        </p>
-                        <p>
-                            Alias voluptates commodi eligendi perspiciatis non ipsam numquam, perferendis fugiat amet
-                            molestias provident unde, deleniti quo ducimus placeat voluptas! Quos amet, aliquam,
-                            reiciendis porro eos voluptates maiores.
-                        </p>
-                    </div>
-                </div>
-                <div class="about-img">
-                    <img src="assets/img/img-lamp-webdev.png" alt="lamp">
-                </div>
-            </div>
-        </section>
-        <section class="form">
-            <form class="form__container">
-                <div class="form-item">
-                    <input class="form-item__input" type="text" name="name" placeholder="Your name...">
-                </div>
-                <div class="form-item">
-                    <input class="form-item__input" type="email" name="mail" placeholder="Your email...">
-                </div>
-                <div class="form-item">
-                    <button class="btn btn--darkness" type="submit">Subscribe</button>
-                </div>
-            </form>
-        </section>
-        <section class="posts">
-            <div class="posts_container">
-                <h3 class="posts-title">Some section of posts</h3>
-                <div class="posts-grid">
-                    <div class="posts-item">
-                        <a class="posts-item__link" href="">
-                            <div class="posts-item__img">
-                                <img src="assets/img/img-post-1.png" alt="">
-                            </div>
-                            <div class="posts-content">
-                                <div class="posts-content__suptext">Nostrum quod fugiat odio perspiciatis</div>
-                                <div class="posts-content__text">Minus ad voluptas non, ducimus suscipit temporibus
-                                    explicabo!
-                                    Inventore dolorum, debitis eligendi earum in corrupti consectetur quam nesciunt
-                                    facilis
-                                    explicabo?</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="posts-item">
-                        <a class="posts-item__link" href="">
-                            <div class="posts-item__img">
-                                <img src="assets/img/img-post-2.png" alt="">
-                            </div>
-                            <div class="posts-content">
-                                <div class="posts-content__suptext">Lorem ipsum dolor amet</div>
-                                <div class="posts-content__text">Lorem ipsum dolor sit amet,
-                                    consectetur adipisicing elit. Nihil
-                                    aperiam ipsum obcaecati, quisquam.
-                                    Reprehenderit corporis neque
-                                    architecto, id, vero voluptate.
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="posts-item">
-                        <a class="posts-item__link" href="">
-                            <div class="posts-item__img">
-                                <img src="assets/img/img-post-3.png" alt="">
-                            </div>
-
-                            <div class="posts-content">
-                                <div class="posts-content__suptext">Eum quibusdam voluptas explicabo, commodi</div>
-                                <div class="posts-content__text">Quo sit explicabo dolore, nihil soluta
-                                    adipisci deleniti consequatur voluptate
-                                    cumque, quaerat minima repudiandae
-                                    consectetur incidunt dolorum, culpa,
-                                    voluptates ab!
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="posts-item">
-                        <a class="posts-item__link" href="">
-                            <div class="posts-item__img">
-                                <img src="assets/img/img-post-4.png" alt="">
-                            </div>
-                            <div class="posts-content">
-                                <div class="posts-content__suptext">Voluptate fuga earum</div>
-                                <div class="posts-content__text">Ullam saepe maiores magni,
-                                    consequatur perferendis earum
-                                    veniam officiis sapiente a veritatis
-                                    corporis voluptatum repellendus,
-                                    autem dolore molestiae suscipit quia!
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="posts-item">
-                        <a class="posts-item__link" href="">
-                            <div class="posts-item__img">
-                                <img src="assets/img/img-post-5.png" alt="">
-                            </div>
-                            <div class="posts-content">
-                                <div class="posts-content__suptext">Facere rerum aliquam nostrum vel</div>
-                                <div class="posts-content__text">Quo sit explicabo dolore, nihil soluta
-                                    adipisci deleniti consequatur voluptate
-                                    cumque, quaerat minima repudiandae
-                                    consectetur incidunt dolorum, culpa,
-                                    voluptates ab!</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="posts-item">
-                        <a class="posts-item__link" href="">
-                            <div class="posts-item__img">
-                                <img src="assets/img/img-post-6.png" alt="">
-                            </div>
-                            <div class="posts-content">
-                                <div class="posts-content__suptext">Ratione reprehenderit necessitatibus, labore vel
-                                </div>
-                                <div class="posts-content__text">Ad est voluptate sunt, cupiditate, voluptatem
-                                    dignissimos
-                                    corporis
-                                    unde
-                                    cumque distinctio, ab odio dolores molestias non cum fugiat enim voluptatibus!
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="posts-action">
-                    <a href="" class="btn btn--darkness">View all posts...</a>
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer class="footer">
-        <div class="footer__container">
-            <ul class="footicons">
-                <li class="footicons-item"><a href="" class="footicons-item__link">
-                        <i class="fab fa-facebook-square"></i>
-                    </a></li>
-                <li class="footicons-item"><a href="" class="footicons-item__link">
-                        <i class="fab fa-google-plus-square"></i>
-                    </a></li>
-                <li class="footicons-item"><a href="" class="footicons-item__link">
-                        <i class="fab fa-twitter-square"></i>
-                    </a></li>
-                <li class="footicons-item"><a href="" class="footicons-item__link">
-                        <i class="fab fa-pinterest-square"></i>
-                    </a></li>
-                <li class="footicons-item"><a href="" class="footicons-item__link"><i class="fab fa-flickr"></i></a>
-                </li>
-            </ul>
-            <hr class="footer-line">
-            <div class="footer-content">
-                <div class="footer-content__text">WE ARE REAL</div>
-                <div class="footer-content__suptext">WEB-DEVELOPERS</div>
-            </div>
+        <div class="posts-action">
+          <a href="" class="btn btn--darkness">View all posts...</a>
         </div>
-    </footer>
-    <!-- Подключаем библиотеку jquery, необходимую для работы нашего основного скрипта -->
-    <script src="libs/jquery/dist/jquery.min.js"></script>
-    <!-- Подключаем наш основной скрипт, с которым будем работать -->
-    <script src="assets/js/main.js"></script>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__container">
+      <ul class="footicons">
+        <li class="footicons-item">
+          <a href="" class="footicons-item__link">
+            <i class="fab fa-facebook-square"></i>
+          </a>
+        </li>
+        <li class="footicons-item">
+          <a href="" class="footicons-item__link">
+            <i class="fab fa-google-plus-square"></i>
+          </a>
+        </li>
+        <li class="footicons-item">
+          <a href="" class="footicons-item__link">
+            <i class="fab fa-twitter-square"></i>
+          </a>
+        </li>
+        <li class="footicons-item">
+          <a href="" class="footicons-item__link">
+            <i class="fab fa-pinterest-square"></i>
+          </a>
+        </li>
+        <li class="footicons-item"><a href="" class="footicons-item__link"><i class="fab fa-flickr"></i></a>
+        </li>
+      </ul>
+      <hr class="footer-line">
+      <div class="footer-content">
+        <div class="footer-content__text">WE ARE REAL</div>
+        <div class="footer-content__suptext">WEB-DEVELOPERS</div>
+      </div>
+    </div>
+  </footer>
+  <!-- Подключаем библиотеку jquery, необходимую для работы нашего основного скрипта -->
+  <script src="libs/jquery/dist/jquery.min.js"></script>
+  <!-- Подключаем наш основной скрипт, с которым будем работать -->
+  <script src="assets/js/main.js"></script>
 
 </body>
 
