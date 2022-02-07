@@ -1,6 +1,6 @@
 @use "../../presets" as *;
 .footer {
-  padding: 35px 20px 70px;
+  padding: 50px 20px 70px;
   text-align: center;
   background-color: $color-primary;
 
@@ -34,7 +34,7 @@
 }
 .footer-line {
   width: 75px;
-  margin: 20px auto 30px;
+  margin: 20px auto;
 
   border: 1px solid rgba($color: #fff, $alpha: 0.1);
   border-right: none;

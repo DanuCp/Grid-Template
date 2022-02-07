@@ -735,7 +735,7 @@ header {
 }
 
 .about {
-  padding: 100px 0 65px;
+  padding: 100px 0 80px;
   background-color: #e5e5e5;
 }
 .about__container {
@@ -756,6 +756,10 @@ header {
       -ms-flex-pack: center;
           justify-content: center;
 }
+.about-img img {
+  max-height: 480px;
+  margin-top: -20px;
+}
 .about-content__title {
   font-family: "Roboto Slab", serif;
   font-size: 2.5rem;
@@ -768,8 +772,9 @@ header {
 .about-content__text {
   font-size: 1.125rem;
   position: relative;
-  letter-spacing: 0.055em;
+  letter-spacing: 0.049em;
   color: #637588;
+  margin-top: -7px;
 }
 .about-content__text::after {
   position: absolute;
@@ -793,29 +798,14 @@ header {
   gap: 20px;
   grid-template-columns: repeat(3, 1fr);
 }
-.form-item__input {
-  font-size: 1.125rem;
-  display: block;
-  width: 100%;
-  height: 60px;
-  padding: 0 30px;
-  -webkit-transition: background-color 0.5s;
-  -o-transition: background-color 0.5s;
-  transition: background-color 0.5s;
-  letter-spacing: 0.125em;
-  color: rgba(255, 255, 255, 0.5);
-  border-color: rgba(255, 255, 255, 0.01);
-  border-bottom-color: #fff;
-  background: rgba(255, 255, 255, 0.05);
-}
 .form .btn--darkness {
   width: 100%;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
-  color: #fff;
+  color: #ffffff;
   border-color: rgba(255, 255, 255, 0.01);
-  border-bottom-color: #fff;
+  border-bottom-color: rgba(255, 255, 255, 0.25);
   background: rgba(255, 255, 255, 0.1);
 }
 .form .btn:hover {
@@ -825,11 +815,58 @@ header {
   border: 2px solid #fff;
   background-color: #d66926;
 }
+.form input {
+  font-size: 1.125rem;
+  display: block;
+  width: 100%;
+  height: 60px;
+  padding: 0 30px;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  letter-spacing: 0.125em;
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.01);
+  border-bottom-color: rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 0.05);
+}
+.form input::-webkit-input-placeholder {
+  color: #637588;
+}
+.form input::-moz-placeholder {
+  color: #637588;
+}
+.form input:-ms-input-placeholder {
+  color: #637588;
+}
+.form input::-ms-input-placeholder {
+  color: #637588;
+}
+.form input::placeholder {
+  color: #637588;
+}
 .form input:hover {
-  -webkit-transition: background-color 0.5s;
-  -o-transition: background-color 0.5s;
-  transition: background-color 0.5s;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  border-color: rgba(255, 255, 255, 0.15);
+  border-bottom-color: #fff;
   background-color: rgba(255, 255, 255, 0.15);
+}
+.form input:hover::-webkit-input-placeholder {
+  color: #8c9bab;
+}
+.form input:hover::-moz-placeholder {
+  color: #8c9bab;
+}
+.form input:hover:-ms-input-placeholder {
+  color: #8c9bab;
+}
+.form input:hover::-ms-input-placeholder {
+  color: #8c9bab;
+}
+.form input:hover::placeholder {
+  color: #8c9bab;
 }
 
 .posts {
@@ -853,11 +890,9 @@ header {
 .posts-content__text {
   font-size: 1rem;
   font-weight: 400;
-  line-height: 20px;
-  margin: 30px 0 0;
+  margin: 16px 0;
   text-align: center;
-  letter-spacing: 0.05em;
-  letter-spacing: 0.01em;
+  letter-spacing: 0.0001em;
   color: #637588;
 }
 .posts-content__suptext {
@@ -865,7 +900,7 @@ header {
   font-size: 1.125rem;
   font-weight: 700;
   line-height: 20px;
-  margin-top: 10px;
+  margin: 18px 0;
   text-align: center;
   letter-spacing: 0.05em;
   color: #637588;
@@ -880,7 +915,7 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 50px;
+  margin-top: 20px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -890,7 +925,7 @@ header {
   font-size: 2.5rem;
   font-weight: 700;
   margin-top: 0;
-  margin-bottom: 55px;
+  margin-bottom: 48px;
   letter-spacing: 0.1151em;
   color: #2d3651;
 }
@@ -971,7 +1006,7 @@ header {
 }
 
 .footer {
-  padding: 35px 20px 70px;
+  padding: 50px 20px 70px;
   text-align: center;
   background-color: #2d3651;
 }
@@ -1010,7 +1045,7 @@ header {
 
 .footer-line {
   width: 75px;
-  margin: 20px auto 30px;
+  margin: 20px auto;
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-right: none;
   border-left: none;

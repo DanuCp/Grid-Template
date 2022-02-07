@@ -1,7 +1,7 @@
 @use "../../mixins" as *;
 @use "../../presets" as *;
 .about {
-  padding: 100px 0 65px;
+  padding: 100px 0 80px;
 
   background-color: $color-gray-light;
   &__container {
@@ -28,6 +28,10 @@
 
     align-items: center;
     justify-content: center;
+    & img {
+      max-height: 480px;
+      margin-top: -20px;
+    }
   }
   &-content {
     &__title {
@@ -50,9 +54,10 @@
 
       position: relative;
 
-      letter-spacing: 0.055em;
+      letter-spacing: 0.049em;
 
       color: $color-gray;
+      margin-top: -7px;
 
       @include md-sm {
         font-size: 1rem;
