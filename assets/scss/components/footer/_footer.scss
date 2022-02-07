@@ -1,59 +1,73 @@
-@use "../../presets" as *;
-.footer {
-  padding: 50px 20px 70px;
-  text-align: center;
-  background-color: $color-primary;
+@use '../../presets' as *;
+.footer
+{
+    padding: 50px 20px 70px;
 
-  &__container {
-    max-width: 1340px;
-    margin: 0 auto;
-  }
-}
-.footicons {
-  display: flex;
-  justify-content: center;
-  margin: 0;
-  padding: 0;
-  &-item {
-    list-style: none;
-    &__link {
-      font-size: 36px;
+    text-align: center;
 
-      display: block;
+    background-color: $color-primary;
 
-      padding: 10px;
-
-      transition: color 0.5s;
-      &:hover {
-        transition: color 0.5s;
-
-        color: $color-accent;
-      }
+    &__container
+    {
+        max-width: 1340px;
+        margin: 0 auto;
     }
-  }
 }
-.footer-line {
-  width: 75px;
-  margin: 20px auto;
+.footicons
+{
+    display: flex;
 
-  border: 1px solid rgba($color: #fff, $alpha: 0.1);
-  border-right: none;
-  border-left: none;
+    margin: 0;
+    padding: 0;
+
+    justify-content: center;
+    &-item
+    {
+        list-style: none;
+        &__link
+        {
+            font-size: 36px;
+
+            display: block;
+
+            padding: 10px;
+
+            transition: color .5s;
+            &:hover
+            {
+                transition: color .5s;
+
+                color: $color-accent;
+            }
+        }
+    }
 }
-.footer-content {
-  &__text {
-    font-weight: 100;
+.footer-line
+{
+    width: 75px;
+    margin: 20px auto;
 
-    margin-right: -0.22em;
+    border: 1px solid rgba($color: #fff, $alpha: .1);
+    border-right: none;
+    border-left: none;
+}
+.footer-content
+{
+    &__text
+    {
+        font-weight: 100;
 
-    letter-spacing: 0.33em;
+        margin-right: -.22em;
 
-    color: rgba($color: #fff, $alpha: 0.2);
-  }
-  &__suptext {
-    font-size: 16px;
-    font-weight: 700;
+        letter-spacing: .33em;
 
-    letter-spacing: 1px;
-  }
+        color: rgba($color: #fff, $alpha: .2);
+    }
+    &__suptext
+    {
+        font-size: 16px;
+        font-weight: 700;
+
+        letter-spacing: 1px;
+    }
 }

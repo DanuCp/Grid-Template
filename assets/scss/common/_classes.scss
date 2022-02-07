@@ -1,59 +1,67 @@
-@use "../presets" as *;
-@use "../mixins" as *;
-.btn {
-  display: flex;
+@use '../presets' as *;
+@use '../mixins' as *;
+.btn
+{
+    display: flex;
 
-  padding-right: 1em;
-  padding-left: 1em;
+    padding-right: 1em;
+    padding-left: 1em;
 
-  transition: background-color 0.5s;
-  letter-spacing: 0.11em;
+    transition: background-color .5s;
+    letter-spacing: .11em;
 
-  border: 2px solid $color-light;
-  background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid $color-light;
+    background-color: rgba(255, 255, 255, .1);
 
-  align-items: center;
-  justify-content: center;
+    align-items: center;
+    justify-content: center;
 }
 
-.btn:hover {
-  transition: background-color 0.5s;
+.btn:hover
+{
+    transition: background-color .5s;
 
-  background-color: $color-accent;
+    background-color: $color-accent;
 }
 
-.btn--light {
-  font-size: 1.125rem;
+.btn--light
+{
+    font-size: 1.125rem;
 
-  width: 250px;
-  height: 60px;
+    width: 250px;
+    height: 60px;
 
-  letter-spacing: 0.1em;
+    letter-spacing: .1em;
 
-  @include lg-md {
-    width: 200px;
-    height: 50px;
-  }
-  @include md-sm {
-    width: 170px;
-    height: 40px;
-  }
-  @include sm {
-    width: 170px;
-    height: 40px;
-  }
+    @include lg-md
+    {
+        width: 200px;
+        height: 50px;
+    }
+    @include md-sm
+    {
+        width: 170px;
+        height: 40px;
+    }
+    @include sm
+    {
+        width: 170px;
+        height: 40px;
+    }
 }
 
-.btn--darkness {
-  font-size: 1.125rem;
+.btn--darkness
+{
+    font-size: 1.125rem;
 
-  width: 350px;
-  height: 60px;
+    width: 350px;
+    height: 60px;
 
-  border: 2px solid #2d3651;
-  background-color: rgba(45, 54, 81, 0.8);
+    border: 2px solid #2d3651;
+    background-color: rgba(45, 54, 81, .8);
 
-  @include sm {
-    width: 100%;
-  }
+    @include sm
+    {
+        width: 100%;
+    }
 }

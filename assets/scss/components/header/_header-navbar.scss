@@ -1,153 +1,179 @@
-@use "../../presets" as *;
-@use "../../mixins" as *;
-.header-navbar {
-  position: relative;
-
-  display: grid;
-
-  letter-spacing: 0.1em;
-
-  align-items: center;
-  justify-content: end;
-  * {
-    margin: 0;
-    padding: 0;
-  }
-  &__btn {
+@use '../../presets' as *;
+@use '../../mixins' as *;
+.header-navbar
+{
     position: relative;
 
-    width: 30px;
-    height: 22.5px;
-    margin: 25px auto;
+    display: grid;
 
-    cursor: pointer;
-    transition: 0.5s ease-in-out;
-    transform: rotate(0deg);
+    letter-spacing: .1em;
 
-    @include md-min {
-      display: none;
+    align-items: center;
+    justify-content: end;
+    *
+    {
+        margin: 0;
+        padding: 0;
     }
-    &-row {
-      position: absolute;
+    &__btn
+    {
+        position: relative;
 
-      display: block;
+        width: 30px;
+        height: 22.5px;
+        margin: 25px auto;
 
-      width: 50%;
-      height: 3px;
+        cursor: pointer;
+        transition: .5s ease-in-out;
+        transform: rotate(0deg);
 
-      transition: 0.25s ease-in-out;
-      transform: rotate(0deg);
+        @include md-min
+        {
+            display: none;
+        }
+        &-row
+        {
+            position: absolute;
 
-      opacity: 1;
-      background: $color-light;
-      &:nth-child(even) {
-        left: 50%;
+            display: block;
 
-        border-radius: 0 3px 3px 0;
-      }
-      &:nth-child(odd) {
-        left: 0;
+            width: 50%;
+            height: 3px;
 
-        border-radius: 3px 0 0 3px;
-      }
-      &:nth-child(1),
-      &:nth-child(2) {
-        top: 0;
-      }
-      &:nth-child(3),
-      &:nth-child(4) {
-        top: 9px;
-      }
-      &:nth-child(5),
-      &:nth-child(6) {
-        top: 18px;
-      }
+            transition: .25s ease-in-out;
+            transform: rotate(0deg);
+
+            opacity: 1;
+            background: $color-light;
+            &:nth-child(even)
+            {
+                left: 50%;
+
+                border-radius: 0 3px 3px 0;
+            }
+            &:nth-child(odd)
+            {
+                left: 0;
+
+                border-radius: 3px 0 0 3px;
+            }
+            &:nth-child(1),
+            &:nth-child(2)
+            {
+                top: 0;
+            }
+            &:nth-child(3),
+            &:nth-child(4)
+            {
+                top: 9px;
+            }
+            &:nth-child(5),
+            &:nth-child(6)
+            {
+                top: 18px;
+            }
+        }
+        &--active span:nth-child(1),
+        &--active span:nth-child(6)
+        {
+            transform: rotate(45deg);
+        }
+        &--active span:nth-child(2),
+        &--active span:nth-child(5)
+        {
+            transform: rotate(-45deg);
+        }
+        &--active span:nth-child(1)
+        {
+            top: 3.5px;
+            left: 2.5px;
+        }
+        &--active span:nth-child(2)
+        {
+            top: 3.5px;
+            left: calc(50% - 2.5px);
+        }
+        &--active span:nth-child(3)
+        {
+            left: -50%;
+
+            opacity: 0;
+        }
+        &--active span:nth-child(4)
+        {
+            left: 100%;
+
+            opacity: 0;
+        }
+        &--active span:nth-child(5)
+        {
+            top: 14.5px;
+            left: 2.5px;
+        }
+        &--active span:nth-child(6)
+        {
+            top: 14.5px;
+            left: calc(50% - 2.5px);
+        }
     }
-    &--active span:nth-child(1),
-    &--active span:nth-child(6) {
-      transform: rotate(45deg);
+    &__list
+    {
+        margin: 0 (-$gap-sm) 0 0;
+        padding: 0;
+
+        list-style: none;
+
+        @include md-min
+        {
+            display: grid;
+
+            margin-left: 20px;
+
+            grid-template-columns: repeat(3, auto);
+            justify-items: center;
+            @include unlist(0 (-$gap-sm) 0 0);
+        }
+        @include md
+        {
+            display: none;
+        }
+        &--active
+        {
+            position: absolute;
+            top: 100%;
+            right: 0;
+
+            display: block !important;
+
+            background-color: #44596e;
+        }
     }
-    &--active span:nth-child(2),
-    &--active span:nth-child(5) {
-      transform: rotate(-45deg);
+    &__item
+    {
+        margin-left: 20px;
+
+        text-align: right;
+
+        @include md-min
+        {
+            margin-left: 20px;
+        }
     }
-    &--active span:nth-child(1) {
-      top: 3.5px;
-      left: 2.5px;
+    &__link
+    {
+        font-size: 1.125rem;
+
+        display: block;
+
+        padding: 20px 10px;
+
+        transition: color .5s;
+
+        &:hover
+        {
+            transition: color .5s;
+
+            color: $color-accent;
+        }
     }
-    &--active span:nth-child(2) {
-      top: 3.5px;
-      left: calc(50% - 2.5px);
-    }
-    &--active span:nth-child(3) {
-      left: -50%;
-
-      opacity: 0;
-    }
-    &--active span:nth-child(4) {
-      left: 100%;
-
-      opacity: 0;
-    }
-    &--active span:nth-child(5) {
-      top: 14.5px;
-      left: 2.5px;
-    }
-    &--active span:nth-child(6) {
-      top: 14.5px;
-      left: calc(50% - 2.5px);
-    }
-  }
-  &__list {
-    margin: 0 (-$gap-sm) 0 0;
-    padding: 0;
-
-    list-style: none;
-
-    @include md-min {
-      display: grid;
-
-      margin-left: 20px;
-
-      grid-template-columns: repeat(3, auto);
-      justify-items: center;
-      @include unlist(0 (-$gap-sm) 0 0);
-    }
-    @include md {
-      display: none;
-    }
-    &--active {
-      position: absolute;
-      top: 100%;
-      right: 0;
-
-      display: block !important;
-
-      background-color: #44596e;
-    }
-  }
-  &__item {
-    margin-left: 20px;
-
-    text-align: right;
-
-    @include md-min {
-      margin-left: 20px;
-    }
-  }
-  &__link {
-    font-size: 1.125rem;
-
-    display: block;
-
-    padding: 20px 10px;
-
-    transition: color 0.5s;
-
-    &:hover {
-      transition: color 0.5s;
-
-      color: $color-accent;
-    }
-  }
 }

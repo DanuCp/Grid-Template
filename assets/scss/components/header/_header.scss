@@ -1,16 +1,17 @@
-@use "../../presets" as *;
-header {
-  position: relative;
+@use '../../presets' as *;
+header
+{
+    position: relative;
 
-  display: grid;
+    display: grid;
 
-  height: 100vh;
-  padding: 150px 0;
+    height: 100vh;
+    padding: 150px 0;
 
-  background: $color-primary;
-  background: url(../img/img-header.png);
-  background-position: center;
-  background-size: cover;
+    background: $color-primary;
+    background: url(../img/img-header.png);
+    background-position: center;
+    background-size: cover;
 
-  align-items: center;
+    align-items: center;
 }
