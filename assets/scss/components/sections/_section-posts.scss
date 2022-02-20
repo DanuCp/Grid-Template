@@ -19,6 +19,7 @@
         transition: .5s;
 
         align-content: center;
+
         &__text
         {
             font-size: 1rem;
@@ -36,7 +37,6 @@
             font-family: $font-header;
             font-size: 1.125rem;
             font-weight: 700;
-            line-height: 20px;
 
             margin: 18px 0;
 

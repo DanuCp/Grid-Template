@@ -64,7 +64,7 @@
         padding: 0 30px;
 
         transition: .5s;
-        letter-spacing: .125em;
+        letter-spacing: .15em;
 
         color: #fff;
         border-color: rgba(255, 255, 255, .01);
@@ -74,12 +74,15 @@
         {
             color: $color-gray;
         }
-        &:hover
+        &:hover,
+        &:focus-visible,
+        &:active
         {
             transition: .5s;
 
             border-color: rgba($color-light, .15);
             border-bottom-color: $color-light;
+            outline: none;
             background-color: rgba($color-light, .15);
             &::placeholder
             {

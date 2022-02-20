@@ -396,7 +396,7 @@ a {
   -webkit-transition: background-color 0.5s;
   -o-transition: background-color 0.5s;
   transition: background-color 0.5s;
-  letter-spacing: 0.11em;
+  letter-spacing: 0.1em;
   border: 2px solid #fff;
   background-color: rgba(255, 255, 255, 0.1);
   -webkit-box-align: center;
@@ -765,16 +765,16 @@ header {
   font-size: 2.5rem;
   font-weight: 700;
   line-height: 1.2em;
-  margin-top: 0px;
+  margin-top: 0;
   margin-bottom: 50px;
   color: #2d3651;
 }
 .about-content__text {
   font-size: 1.125rem;
   position: relative;
+  margin-top: -7px;
   letter-spacing: 0.049em;
   color: #637588;
-  margin-top: -7px;
 }
 .about-content__text::after {
   position: absolute;
@@ -803,7 +803,7 @@ header {
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
-  color: #ffffff;
+  color: #fff;
   border-color: rgba(255, 255, 255, 0.01);
   border-bottom-color: rgba(255, 255, 255, 0.25);
   background: rgba(255, 255, 255, 0.1);
@@ -824,8 +824,8 @@ header {
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
-  letter-spacing: 0.125em;
-  color: #ffffff;
+  letter-spacing: 0.15em;
+  color: #fff;
   border-color: rgba(255, 255, 255, 0.01);
   border-bottom-color: rgba(255, 255, 255, 0.25);
   background: rgba(255, 255, 255, 0.05);
@@ -845,27 +845,28 @@ header {
 .form input::placeholder {
   color: #637588;
 }
-.form input:hover {
+.form input:hover, .form input:focus-visible, .form input:active {
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
   border-color: rgba(255, 255, 255, 0.15);
   border-bottom-color: #fff;
   background-color: rgba(255, 255, 255, 0.15);
+  outline: none;
 }
-.form input:hover::-webkit-input-placeholder {
+.form input:hover::-webkit-input-placeholder, .form input:focus-visible::-webkit-input-placeholder, .form input:active::-webkit-input-placeholder {
   color: #8c9bab;
 }
-.form input:hover::-moz-placeholder {
+.form input:hover::-moz-placeholder, .form input:focus-visible::-moz-placeholder, .form input:active::-moz-placeholder {
   color: #8c9bab;
 }
-.form input:hover:-ms-input-placeholder {
+.form input:hover:-ms-input-placeholder, .form input:focus-visible:-ms-input-placeholder, .form input:active:-ms-input-placeholder {
   color: #8c9bab;
 }
-.form input:hover::-ms-input-placeholder {
+.form input:hover::-ms-input-placeholder, .form input:focus-visible::-ms-input-placeholder, .form input:active::-ms-input-placeholder {
   color: #8c9bab;
 }
-.form input:hover::placeholder {
+.form input:hover::placeholder, .form input:focus-visible::placeholder, .form input:active::placeholder {
   color: #8c9bab;
 }
 
@@ -899,7 +900,6 @@ header {
   font-family: "Roboto Slab", serif;
   font-size: 1.125rem;
   font-weight: 700;
-  line-height: 20px;
   margin: 18px 0;
   text-align: center;
   letter-spacing: 0.05em;
@@ -1019,11 +1019,11 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 0 0 0 2px;
+  padding: 0;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 0;
-  padding: 0;
 }
 .footicons-item {
   list-style: none;
@@ -1031,7 +1031,7 @@ header {
 .footicons-item__link {
   font-size: 36px;
   display: block;
-  padding: 10px;
+  padding: 10px 0.255em;
   -webkit-transition: color 0.5s;
   -o-transition: color 0.5s;
   transition: color 0.5s;
@@ -1045,22 +1045,25 @@ header {
 
 .footer-line {
   width: 75px;
-  margin: 20px auto;
+  margin: 15px auto 20px;
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-right: none;
   border-left: none;
 }
 
+.footer-content {
+  line-height: 1.2;
+}
 .footer-content__text {
   font-weight: 100;
-  margin-right: -0.22em;
+  margin-right: -0.5em;
   letter-spacing: 0.33em;
-  color: rgba(255, 255, 255, 0.2);
+  color: #637588;
 }
 .footer-content__suptext {
   font-size: 16px;
   font-weight: 700;
-  letter-spacing: 1px;
+  letter-spacing: 0.05em;
 }
 @media (min-height: 691px) {
   .skills__container {

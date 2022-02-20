@@ -17,7 +17,7 @@
 {
     display: flex;
 
-    margin: 0;
+    margin: 0 0 0 2px;
     padding: 0;
 
     justify-content: center;
@@ -30,7 +30,7 @@
 
             display: block;
 
-            padding: 10px;
+            padding: 10px .255em;
 
             transition: color .5s;
             &:hover
@@ -45,7 +45,7 @@
 .footer-line
 {
     width: 75px;
-    margin: 20px auto;
+    margin: 15px auto 20px;
 
     border: 1px solid rgba($color: #fff, $alpha: .1);
     border-right: none;
@@ -53,21 +53,22 @@
 }
 .footer-content
 {
+    line-height: 1.2;
     &__text
     {
         font-weight: 100;
 
-        margin-right: -.22em;
+        margin-right: -.5em;
 
         letter-spacing: .33em;
 
-        color: rgba($color: #fff, $alpha: .2);
+        color: #637588;
     }
     &__suptext
     {
         font-size: 16px;
         font-weight: 700;
 
-        letter-spacing: 1px;
+        letter-spacing: .05em;
     }
 }
