@@ -245,3 +245,12 @@
         @content;
     }
 }
+
+// личные миксины
+@mixin sm--min
+{
+    @media (max-width: ($sm - .2)) and (min-width: 0)
+    {
+        @content;
+    }
+}

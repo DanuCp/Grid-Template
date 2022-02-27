@@ -2,9 +2,22 @@
 @use '../../presets' as *;
 .about
 {
-    padding: 100px 0 80px;
+    padding: 100px 0;
 
     background-color: $color-gray-light;
+
+    @include lg-md
+    {
+        padding: 80px 0;
+    }
+    @include md-sm
+    {
+        padding: 60px 0;
+    }
+    @include sm--min
+    {
+        padding: 60px 0;
+    }
     &__container
     {
         display: grid;
@@ -16,14 +29,19 @@
 
         gap: $gap-x5;
         grid-template-columns: 1fr 270px;
-        @include md-sm
+        @include lg-md
         {
             gap: $gap-x2;
         }
-        @include sm
+        @include md-sm
+        {
+            gap: $gap;
+        }
+        @include sm--min
         {
             display: grid;
 
+            gap: $gap;
             grid-template-columns: 1fr;
         }
     }
@@ -35,8 +53,18 @@
         justify-content: center;
         & img
         {
+            max-width: 100%;
             max-height: 480px;
             margin-top: -20px;
+
+            @include md-sm
+            {
+                max-height: 420px;
+            }
+            @include sm--min
+            {
+                margin-top: 0;
+            }
         }
     }
     &-content
@@ -53,9 +81,25 @@
 
             color: $color-primary;
 
+            @include lg-md
+            {
+                font-size: 2rem;
+
+                margin-bottom: 2.625rem;
+            }
             @include md-sm
             {
                 font-size: 1.5rem;
+
+                margin-bottom: 2.25rem;
+            }
+            @include sm--min
+            {
+                font-size: 1.5rem;
+
+                margin-bottom: 2.25rem;
+
+                text-align: center;
             }
         }
         &__text
@@ -70,7 +114,15 @@
 
             color: $color-gray;
 
+            @include lg-md
+            {
+                font-size: 1rem;
+            }
             @include md-sm
+            {
+                font-size: 1rem;
+            }
+            @include sm--min
             {
                 font-size: 1rem;
             }
@@ -88,7 +140,7 @@
 
                 @include lg-md
                 {
-                    right: -$gap-x2;
+                    right: -$gap;
                 }
                 @include md-sm
                 {
