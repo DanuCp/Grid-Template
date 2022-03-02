@@ -735,7 +735,7 @@ header {
 }
 
 .about {
-  padding: 100px 0;
+  padding: 100px 0 80px;
   background-color: #e5e5e5;
 }
 .about__container {
@@ -922,12 +922,12 @@ header {
           justify-content: center;
 }
 .posts-title {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto Slab", serif;
   font-size: 2.5rem;
   font-weight: 700;
   margin-top: 0;
   margin-bottom: 48px;
-  letter-spacing: 0.1151em;
+  letter-spacing: 0.1em;
   color: #2d3651;
 }
 .posts-item {
