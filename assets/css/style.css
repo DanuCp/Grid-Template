@@ -933,6 +933,7 @@ header {
 .posts-item {
   display: grid;
   overflow: hidden;
+  background-color: #eeeeee;
   -webkit-transition: -webkit-transform 0.5s;
   transition: -webkit-transform 0.5s;
   -o-transition: transform 0.5s;
